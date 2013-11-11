@@ -1,0 +1,126 @@
+/* @override http://openskyscraper.org/css/style.css */
+
+/* Reset the entire styles. */
+@import url("http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css");
+
+/* Load the required fonts. */
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+html {
+	font: 13px/1.25 Lato, Helvetica, sans-serif;
+	color: hsl(0, 0%, 25%);
+	background-color: hsl(0, 0%, 95%);
+}
+
+.mw {
+	width: 600px;
+	padding: 20px;
+	margin: 10px auto;
+	background-color: white;
+}
+.mw:first-child { margin-top: 0; }
+.mw:last-child { margin-bottom: 0; }
+
+a {
+	color: hsl(205, 50%, 50%);
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 150%;
+	margin-bottom: 0.75em;
+	margin-top: 1.5em;
+}
+
+h2 {
+	font-size: 125%;
+	color: hsl(0, 0%, 50%);
+	margin-bottom: 0.75em;
+	margin-top: 1.5em;
+}
+
+h1:first-child, h2:first-child { margin-top: 0; }
+
+#title {
+	font-size: 48px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+#subtitle {
+	text-align: center;
+	color: hsl(0, 0%, 65%);
+}
+
+#versions {
+	margin-bottom: 1em;
+}
+a.ver, a.mb {
+	padding: 10px 15px;
+	color: white;
+	text-decoration: none;
+	text-align: left;
+	display: inline-block;
+	text-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5);
+	box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.3), inset 0 0 1px hsla(0, 0%, 100%, 0.75);
+}
+
+a.ver {
+	background-image: -webkit-linear-gradient(top, hsl(205, 50%, 75%) 0%, hsl(205, 50%, 55%) 100%);
+	background-image: -moz-linear-gradient(top, hsl(205, 50%, 75%) 0%, hsl(205, 50%, 55%) 100%);
+	background-image: -ms-linear-gradient(top, hsl(205, 50%, 75%) 0%, hsl(205, 50%, 55%) 100%);
+	background-image: linear-gradient(to bottom, hsl(205, 50%, 75%) 0%, hsl(205, 50%, 55%) 100%);
+	border: 1px solid hsl(205, 50%, 55%);
+	border-right: none;
+}
+
+a.mb {
+	background-image: -webkit-linear-gradient(top, hsl(0, 0%, 75%) 0%, hsl(0, 0%, 55%) 100%);
+	background-image: -moz-linear-gradient(top, hsl(0, 0%, 75%) 0%, hsl(0, 0%, 55%) 100%);
+	background-image: -ms-linear-gradient(top, hsl(0, 0%, 75%) 0%, hsl(0, 0%, 55%) 100%);
+	background-image: linear-gradient(to bottom, hsl(0, 0%, 75%) 0%, hsl(0, 0%, 55%) 100%);
+	border: 1px solid hsl(0, 0%, 55%);
+	border-right: none;
+}
+
+a.ver div.v, a.mb div.v {
+	font-size: 150%;
+	text-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5);
+}
+
+a.ver:first-of-type, a.mb:first-of-type {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+a.ver:last-of-type, a.mb:last-of-type {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+a.ver:last-of-type { border-right: 1px solid hsl(205, 50%, 55%); }
+a.mb:last-of-type { border-right: 1px solid hsl(0, 0%, 55%); }
+
+table {
+	font-size: 100%;
+	width: 100%;
+}
+
+table th:first-child, table td:first-child { padding-left: 0; }
+table th:last-child, table td:last-child { padding-right: 0; }
+
+table th {
+	padding: 5px;
+	border-bottom: 1px solid hsl(0, 0%, 90%);
+	font-weight: bold;
+}
+
+table td {
+	padding: 5px;
+}
+
+td.st { text-align: center; }
+td.st a { color: inherit; font-size: 11px; }
+td.st.p { color: hsl(90, 100%, 40%); background-color: hsl(90, 100%, 95%); }
+td.st.n { color: hsl(10, 100%, 40%); background-color: hsl(10, 100%, 90%); }
+td.st.x { color: hsl(0, 0%, 60%); }
+
+td.st .sym { font-size: 16px; }
