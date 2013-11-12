@@ -75,6 +75,7 @@ foreach ($platforms as $p) {
     </script>
   </head>
   <body>
+    <div id="banner"></div>
     <div class="mw">
       <div id="title">OpenSkyscraper</div>
       <div id="subtitle">Welcome to OpenSkyscraper, an open source clone of Maxis' classic game SimTower.</div>

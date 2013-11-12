@@ -58,6 +58,7 @@ uksort($builds, function($a,$b){
     </script>
   </head>
   <body>
+    <div id="banner"></div>
     <div class="mw">
       <div id="title">OpenSkyscraper</div>
       <div id="subtitle">Build Logs</div>
@@ -67,7 +68,7 @@ uksort($builds, function($a,$b){
       <table>
         <tr>
           <th>Version</th>
-          <?php foreach ($platforms as $p) echo "<th>".htmlspecialchars($p)."</th>\n"; ?>
+          <?php foreach ($platforms as $p) echo "<th class=\"pf\">".htmlspecialchars($p)."</th>\n"; ?>
         </tr>
         <?php foreach ($builds as $v => $ps) {
           echo "<tr>";
@@ -82,7 +83,7 @@ uksort($builds, function($a,$b){
                 case "n": echo "\xE2\x9C\x98"; break;
                 case "x": echo "?"; break;
               }
-              echo "</span><br/>{$e->duration}s";// on ".date("Y-m-d H:i", $e->date);
+              echo "</span>";//<br/>{$e->duration}s";// on ".date("Y-m-d H:i", $e->date);
               echo "</a></td>";
             } else {
               echo "<td>—</td>";

@@ -18,7 +18,7 @@ html {
 	margin: 10px auto;
 	background-color: white;
 }
-.mw:first-child { margin-top: 0; }
+.mw:first-child, #banner + .mw { margin-top: 0; }
 .mw:last-child { margin-bottom: 0; }
 
 a {
@@ -40,6 +40,14 @@ h2 {
 }
 
 h1:first-child, h2:first-child { margin-top: 0; }
+
+#banner {
+	background: url(../images/banner.png) no-repeat;
+	width: 640px;
+	margin: 0 auto;
+	height: 78px;
+	border-bottom: 1px solid hsl(32, 25%, 25%);
+}
 
 #title {
 	font-size: 48px;
@@ -124,3 +132,4 @@ td.st.n { color: hsl(10, 100%, 40%); background-color: hsl(10, 100%, 90%); }
 td.st.x { color: hsl(0, 0%, 60%); }
 
 td.st .sym { font-size: 16px; }
+th.pf { text-align: center; }
