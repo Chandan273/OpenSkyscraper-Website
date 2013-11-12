@@ -61,7 +61,7 @@ uksort($builds, function($a,$b){
     <div id="banner"></div>
     <div class="mw">
       <div id="title">OpenSkyscraper</div>
-      <div id="subtitle">Build Logs</div>
+      <div id="subtitle">Build Logs — <a href="/">back</a></div>
     </div>
     
     <div class="mw">
